@@ -54,3 +54,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+//MARK: Navigation
+
+extension SceneDelegate {
+    
+    func gotoRootViewController() {
+        guard let rootVC = Storyboards.login.instantiateViewController(withIdentifier: ViewControllers.rootViewContoller) as? RootViewController else {return}
+        setRootViewCotroller(rootVC)
+    }
+    
+    func setRootViewCotroller(_ viewcontroller: UIViewController) {
+        self.window?.rootViewController = viewcontroller
+        self.window?.backgroundColor = Color.backgroundWhite.value
+        self.window?.makeKeyAndVisible()
+    }
+}
+

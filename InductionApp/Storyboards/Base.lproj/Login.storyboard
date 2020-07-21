@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8rb-S7-9Ak">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="IQ5-kz-Rmc">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="8rb-S7-9Ak" customClass="RootViewController" customModule="InductionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uqy-7W-GvR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3vq-VQ-UeN">
+                                <rect key="frame" x="0.0" y="-84" width="375" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lJE-fC-ojt"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="3vq-VQ-UeN" id="qaE-AM-4kc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cc8-pW-x1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165.21739130434784" y="81.696428571428569"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="yTo-iQ-oj2">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="MQX-v2-nbV" customClass="LoginViewController" customModule="InductionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfF-gD-mQR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yWC-Dc-CQv">
+                                <rect key="frame" x="20" y="118" width="335" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yWC-Dc-CQv" secondAttribute="height" multiplier="187:100" id="XEQ-bM-R5Y"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLb-XV-7r4" customClass="CustomButton" customModule="InductionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="728" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6uf-ve-lqU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="MQX-v2-nbV" eventType="touchUpInside" id="daX-Af-w2g"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohZ-wj-N6A" customClass="CustomTexrField" customModule="InductionApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="352" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="InV-Il-5ez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQY-34-7c7" customClass="CustomTexrField" customModule="InductionApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="432" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8pd-L8-wrA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ohZ-wj-N6A" firstAttribute="top" secondItem="yWC-Dc-CQv" secondAttribute="bottom" constant="55" id="4t9-fp-vD2"/>
+                            <constraint firstItem="dLb-XV-7r4" firstAttribute="bottom" secondItem="e9P-79-lGJ" secondAttribute="bottom" id="6Ro-Tt-B73"/>
+                            <constraint firstItem="uQY-34-7c7" firstAttribute="leading" secondItem="e9P-79-lGJ" secondAttribute="leading" constant="20" id="8s7-FQ-1tj"/>
+                            <constraint firstItem="dLb-XV-7r4" firstAttribute="leading" secondItem="e9P-79-lGJ" secondAttribute="leading" id="KEQ-Xb-hBx"/>
+                            <constraint firstItem="e9P-79-lGJ" firstAttribute="trailing" secondItem="uQY-34-7c7" secondAttribute="trailing" constant="20" id="PqW-Q6-Mfy"/>
+                            <constraint firstItem="dLb-XV-7r4" firstAttribute="trailing" secondItem="e9P-79-lGJ" secondAttribute="trailing" id="Qn0-RC-2e8"/>
+                            <constraint firstItem="yWC-Dc-CQv" firstAttribute="top" secondItem="cfF-gD-mQR" secondAttribute="top" constant="118" id="RZH-32-gNV"/>
+                            <constraint firstItem="e9P-79-lGJ" firstAttribute="trailing" secondItem="ohZ-wj-N6A" secondAttribute="trailing" constant="20" id="eR2-nE-Nbi"/>
+                            <constraint firstItem="dLb-XV-7r4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uQY-34-7c7" secondAttribute="bottom" constant="55" id="l07-zM-0yl"/>
+                            <constraint firstItem="yWC-Dc-CQv" firstAttribute="leading" secondItem="e9P-79-lGJ" secondAttribute="leading" constant="20" id="lRy-VF-auO"/>
+                            <constraint firstItem="e9P-79-lGJ" firstAttribute="trailing" secondItem="yWC-Dc-CQv" secondAttribute="trailing" constant="20" id="mG2-Nr-a7v"/>
+                            <constraint firstItem="uQY-34-7c7" firstAttribute="top" secondItem="ohZ-wj-N6A" secondAttribute="bottom" constant="30" id="sm8-Zn-BDh"/>
+                            <constraint firstItem="ohZ-wj-N6A" firstAttribute="leading" secondItem="e9P-79-lGJ" secondAttribute="leading" constant="20" id="t21-dA-6no"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e9P-79-lGJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qx0-7s-dMJ"/>
+                    <connections>
+                        <outlet property="txtMobileNo" destination="ohZ-wj-N6A" id="0Yq-Ik-VbV"/>
+                        <outlet property="txtPassword" destination="uQY-34-7c7" id="FCN-Qh-HMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKh-K2-oXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466.25" y="81.338028169014081"/>
+        </scene>
+        <!--Root Navigation Controller-->
+        <scene sceneID="o10-0W-JzQ">
+            <objects>
+                <navigationController storyboardIdentifier="RootNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="rR4-X5-3Ut" customClass="RootNavigationController" customModule="InductionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1UW-lP-Mhr">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MQX-v2-nbV" kind="relationship" relationship="rootViewController" id="S6G-m0-ZiJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Lj-2t-cot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_app_logo" width="500" height="500"/>
+    </resources>
+</document>

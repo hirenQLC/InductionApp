@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  InductionApp
+
+  Created by QLC on 17/07/20.
+  Copyright © 2020 QLC. All rights reserved.
+*/
+
+
+// Login
+
+"mobile_NO" = "Mobile Number";
+"password" = "Password";
