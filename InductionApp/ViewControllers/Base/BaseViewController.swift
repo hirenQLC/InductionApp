@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, ApiCallbacks {
 
     var isBackgroundBlue: Bool {
         return false
@@ -45,5 +45,13 @@ class BaseViewController: UIViewController {
                 nav.setUI()
             }
         }
+    }
+    
+    func onHttpResponse(request: ApiRequest, data: Any) {
+        
+    }
+    
+    func onHttpError(error: String) {
+        print(error)
     }
 }

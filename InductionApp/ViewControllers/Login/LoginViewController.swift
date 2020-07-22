@@ -29,10 +29,32 @@ class LoginViewController: BaseViewController {
         txtMobileNo.setPlaceHolderText = HardCodedStrings.mobileNo
         txtPassword.setPlaceHolderText = HardCodedStrings.password
         txtPassword.isSecrect = true
+        
+        txtMobileNo.text = "poonam@qlc.in"
+        txtPassword.text = "qlc.in123"
     }
     
     @IBAction func loginButtonAction(_ sender: CustomButton) {
-        userDefaults.set(true, forKey: UserDefaultKeys.loginKey)
-        sceneDelegateInstance?.gotoRootViewController()
+        HttpManager.shared.executeHttpRequest(apiRequest: .login(Email: txtMobileNo.text ?? "", Password: txtPassword.text ?? ""), apiCallbacks: self)
+    }
+    
+    override func onHttpResponse(request: ApiRequest, data: Any) {
+        switch request {
+        case .login:
+            
+            let decoder = JSONDecoder()
+            guard let dataObj = data as? Data else {return}
+            do {
+                let result = try decoder.decode(LoginBase.self, from: dataObj)
+                print(result.result?.accountName)
+            }catch(let error) {
+                print(error.localizedDescription)
+            }
+            
+            DispatchQueue.main.async {
+                userDefaults.set(true, forKey: UserDefaultKeys.loginKey)
+                sceneDelegateInstance?.gotoRootViewController()
+            }
+        }
     }
 }
