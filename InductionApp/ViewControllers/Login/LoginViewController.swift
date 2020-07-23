@@ -35,6 +35,8 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: CustomButton) {
+        
+        //MARK: Login API Call
         HttpManager.shared.executeHttpRequest(apiRequest: .login(Email: txtMobileNo.text ?? "", Password: txtPassword.text ?? ""), apiCallbacks: self)
     }
     
