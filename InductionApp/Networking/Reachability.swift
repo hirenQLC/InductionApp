@@ -1,9 +1,9 @@
 //
 //  Reachability.swift
-//  BTOFF
+//  InductionApp
 //
-//  Created by LogicalWings Mac on 25/09/18.
-//  Copyright © 2018 LogicalWings Mac. All rights reserved.
+//  Created by QLC on 16/07/20.
+//  Copyright © 2020 QLC. All rights reserved.
 //
 
 import Foundation

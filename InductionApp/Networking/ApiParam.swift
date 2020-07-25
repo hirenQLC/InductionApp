@@ -1,4 +1,10 @@
-
+//
+//  ApiParam.swift
+//  InductionApp
+//
+//  Created by QLC on 16/07/20.
+//  Copyright © 2020 QLC. All rights reserved.
+//
 
 import UIKit
 

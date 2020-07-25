@@ -65,6 +65,7 @@
 		79D9395624C02DF80077174B /* UIViewContoller+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9395524C02DF80077174B /* UIViewContoller+Extension.swift */; };
 		79D9395924C071AF0077174B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D9395824C071AF0077174B /* Home.storyboard */; };
 		79D9396024C073620077174B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9395F24C073620077174B /* DashboardViewController.swift */; };
+		79E097F324CC34920036ECEC /* UserDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E097F224CC34920036ECEC /* UserDatabaseManager.swift */; };
 		79F27A3C24C179CC0082E45C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F27A3B24C179CC0082E45C /* UIColor+Extension.swift */; };
 		79F27A4124C1894A0082E45C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F27A4024C1894A0082E45C /* CustomButton.swift */; };
 		79F27A4324C1ABA50082E45C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F27A4224C1ABA50082E45C /* CustomTextField.swift */; };
@@ -159,6 +160,7 @@
 		79D9395524C02DF80077174B /* UIViewContoller+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewContoller+Extension.swift"; sourceTree = "<group>"; };
 		79D9395824C071AF0077174B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		79D9395F24C073620077174B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		79E097F224CC34920036ECEC /* UserDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabaseManager.swift; sourceTree = "<group>"; };
 		79F27A3B24C179CC0082E45C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		79F27A4024C1894A0082E45C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		79F27A4224C1ABA50082E45C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -279,8 +281,8 @@
 		797295D024C7063B00C5B56B /* Third Party Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				797295D324C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift */,
 				797295D124C7069500C5B56B /* LNZSnapToCenterCollectionViewLayout.swift */,
+				797295D324C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift */,
 			);
 			path = "Third Party Libraries";
 			sourceTree = "<group>";
@@ -324,7 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				79D9394024C0193A0077174B /* Resources */,
-				79D9393F24C019080077174B /* Appdelegate */,
+				79D9393F24C019080077174B /* Application */,
 				79D9393B24C0184F0077174B /* Storyboards */,
 				79D9393E24C018790077174B /* ViewControllers */,
 				79D9393C24C018600077174B /* Models */,
@@ -337,6 +339,7 @@
 				79D9394324C01B4B0077174B /* Style */,
 				797295D524C8179700C5B56B /* Networking */,
 				797295D024C7063B00C5B56B /* Third Party Libraries */,
+				79E097F124CC31E80036ECEC /* Core Data Manager Classes */,
 				79D9394124C0195D0077174B /* Core Data */,
 			);
 			path = InductionApp;
@@ -388,13 +391,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		79D9393F24C019080077174B /* Appdelegate */ = {
+		79D9393F24C019080077174B /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				79D938F824C016A80077174B /* AppDelegate.swift */,
 				79D938FA24C016A80077174B /* SceneDelegate.swift */,
 			);
-			path = Appdelegate;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		79D9394024C0193A0077174B /* Resources */ = {
@@ -466,6 +469,14 @@
 				79D9394D24C025770077174B /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		79E097F124CC31E80036ECEC /* Core Data Manager Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79E097F224CC34920036ECEC /* UserDatabaseManager.swift */,
+			);
+			path = "Core Data Manager Classes";
 			sourceTree = "<group>";
 		};
 		79F27A3D24C186E10082E45C /* Root */ = {
@@ -780,6 +791,7 @@
 				79D9394524C01CEA0077174B /* Style+Color.swift in Sources */,
 				791CAE2924C85FB80044663B /* TerritoryLastUpdated.swift in Sources */,
 				791CAE2C24C85FB80044663B /* PermissionsList.swift in Sources */,
+				79E097F324CC34920036ECEC /* UserDatabaseManager.swift in Sources */,
 				797295D424C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift in Sources */,
 				79D938FB24C016A80077174B /* SceneDelegate.swift in Sources */,
 				791CAE2224C85FB80044663B /* ExpenseCategoryList.swift in Sources */,

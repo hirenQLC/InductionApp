@@ -47,8 +47,11 @@ class LoginViewController: BaseViewController {
             let decoder = JSONDecoder()
             guard let dataObj = data as? Data else {return}
             do {
-                let result = try decoder.decode(LoginBase.self, from: dataObj)
-                print(result.result?.accountName)
+                let loginResult = try decoder.decode(LoginBase.self, from: dataObj)
+                
+                DispatchQueue.main.async {
+                    UserDatabaseManager.shared.insertUser(userId: loginResult.result?.userId ?? 0 , userFirstName: loginResult.result?.userFirstName ?? "", userLastName: loginResult.result?.userLastName ?? "", userEmailAddress: loginResult.result?.userEmailAddress ?? "", userToken: loginResult.result?.userToken ?? "", userDesignation: loginResult.result?.userDesignation ?? "")
+                }
             }catch(let error) {
                 print(error.localizedDescription)
             }
