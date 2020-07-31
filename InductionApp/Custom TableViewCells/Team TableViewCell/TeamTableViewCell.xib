@@ -26,20 +26,33 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni7-s4-Abg">
-                                <rect key="frame" x="80" y="20" width="30" height="20"/>
+                                <rect key="frame" x="80" y="20" width="50" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Vnr-20-TgM"/>
+                                    <constraint firstAttribute="width" constant="50" id="Vnr-20-TgM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.066666666669999999" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiren Kadam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ns-Cy-isA">
-                                <rect key="frame" x="130" y="20" width="137" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiren Kadam" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ns-Cy-isA">
+                                <rect key="frame" x="150" y="20" width="88.5" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.066666666669999999" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeN-5p-L7I">
+                                <rect key="frame" x="254" y="22" width="26.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nz-Xhd" customClass="CircularProgressView" customModule="InductionApp" customModuleProvider="target">
+                                <rect key="frame" x="252" y="15" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="grK-Nz-Xhd" secondAttribute="height" multiplier="1:1" id="qNa-wY-7SM"/>
+                                </constraints>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="M7O-7g-Rwg">
                                 <rect key="frame" x="297" y="22.5" width="15" height="15"/>
                                 <color key="tintColor" red="0.066666666669999999" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,18 +65,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ni7-s4-Abg" secondAttribute="bottom" constant="20" id="0wA-un-HnZ"/>
+                            <constraint firstAttribute="bottom" secondItem="grK-Nz-Xhd" secondAttribute="bottom" constant="15" id="1FG-3t-iHP"/>
                             <constraint firstItem="9ns-Cy-isA" firstAttribute="leading" secondItem="ni7-s4-Abg" secondAttribute="trailing" constant="20" id="5B9-Zg-8xc"/>
+                            <constraint firstItem="SeN-5p-L7I" firstAttribute="centerX" secondItem="grK-Nz-Xhd" secondAttribute="centerX" id="AFH-AG-zxs"/>
+                            <constraint firstItem="grK-Nz-Xhd" firstAttribute="top" secondItem="ARb-Ki-fAb" secondAttribute="top" constant="15" id="ENI-at-APw"/>
                             <constraint firstAttribute="bottom" secondItem="dTZ-8a-LLL" secondAttribute="bottom" constant="10" id="Fcw-KX-Ckt"/>
                             <constraint firstItem="dTZ-8a-LLL" firstAttribute="centerY" secondItem="ARb-Ki-fAb" secondAttribute="centerY" id="L9X-t1-eiz"/>
                             <constraint firstItem="ni7-s4-Abg" firstAttribute="leading" secondItem="dTZ-8a-LLL" secondAttribute="trailing" constant="20" id="LCk-8C-7bn"/>
                             <constraint firstItem="dTZ-8a-LLL" firstAttribute="top" secondItem="ARb-Ki-fAb" secondAttribute="top" constant="10" id="OSE-hV-OXy"/>
-                            <constraint firstItem="M7O-7g-Rwg" firstAttribute="leading" secondItem="9ns-Cy-isA" secondAttribute="trailing" constant="30" id="X0l-Y4-Yui"/>
+                            <constraint firstItem="SeN-5p-L7I" firstAttribute="centerY" secondItem="grK-Nz-Xhd" secondAttribute="centerY" id="UFZ-nb-gQH"/>
                             <constraint firstAttribute="trailing" secondItem="M7O-7g-Rwg" secondAttribute="trailing" constant="8" id="gQA-n3-DGO"/>
                             <constraint firstItem="dTZ-8a-LLL" firstAttribute="leading" secondItem="ARb-Ki-fAb" secondAttribute="leading" constant="20" id="gQu-xp-J7Q"/>
                             <constraint firstItem="M7O-7g-Rwg" firstAttribute="centerY" secondItem="ARb-Ki-fAb" secondAttribute="centerY" id="h53-6Y-We3"/>
                             <constraint firstItem="9ns-Cy-isA" firstAttribute="top" secondItem="ARb-Ki-fAb" secondAttribute="top" constant="20" id="nHu-s3-WH8"/>
+                            <constraint firstItem="M7O-7g-Rwg" firstAttribute="leading" secondItem="grK-Nz-Xhd" secondAttribute="trailing" constant="15" id="oBo-sG-J32"/>
                             <constraint firstAttribute="bottom" secondItem="9ns-Cy-isA" secondAttribute="bottom" constant="20" id="og2-Bs-D3L"/>
                             <constraint firstItem="ni7-s4-Abg" firstAttribute="top" secondItem="ARb-Ki-fAb" secondAttribute="top" constant="20" id="orm-6k-Ypo"/>
+                            <constraint firstItem="grK-Nz-Xhd" firstAttribute="leading" secondItem="9ns-Cy-isA" secondAttribute="trailing" constant="13.5" id="wiK-zi-e7Y"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -76,7 +94,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="attendencePercentageLabel" destination="SeN-5p-L7I" id="RUA-gg-l6x"/>
                 <outlet property="memberImageView" destination="dTZ-8a-LLL" id="SAb-VE-HlF"/>
+                <outlet property="nameLabel" destination="9ns-Cy-isA" id="Q3d-GC-e8g"/>
+                <outlet property="progressView" destination="grK-Nz-Xhd" id="lV3-O7-ppE"/>
+                <outlet property="srNoLabel" destination="ni7-s4-Abg" id="r2x-7F-9fx"/>
             </connections>
             <point key="canvasLocation" x="127.53623188405798" y="132.58928571428572"/>
         </tableViewCell>

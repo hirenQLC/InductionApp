@@ -1,6 +1,6 @@
 import Foundation
 
-struct Result : Codable {
+struct LoginResult : Codable {
 	let accountId : Int?
 	let accountLocationInterval : Int?
 	let accountName : String?

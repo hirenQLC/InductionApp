@@ -5,7 +5,7 @@ struct LoginBase : Codable {
 	let errorCode : String?
 	let errorMessage : String?
 	let resultType : String?
-	let result : Result?
+	let result : LoginResult?
 
 	enum CodingKeys: String, CodingKey {
 
@@ -22,7 +22,7 @@ struct LoginBase : Codable {
 		errorCode = try values.decodeIfPresent(String.self, forKey: .errorCode)
 		errorMessage = try values.decodeIfPresent(String.self, forKey: .errorMessage)
 		resultType = try values.decodeIfPresent(String.self, forKey: .resultType)
-		result = try values.decodeIfPresent(Result.self, forKey: .result)
+		result = try values.decodeIfPresent(LoginResult.self, forKey: .result)
 	}
 
 }

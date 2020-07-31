@@ -60,6 +60,9 @@ class LoginViewController: BaseViewController {
                 userDefaults.set(true, forKey: UserDefaultKeys.loginKey)
                 sceneDelegateInstance?.gotoRootViewController()
             }
+            break
+        default:
+            break
         }
     }
 }

@@ -16,6 +16,7 @@ enum TableType {
 class CustomTableView: UITableView {
     
     var tableType: TableType?
+    var teamArray = [MyteamUserList]()
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -31,16 +32,17 @@ class CustomTableView: UITableView {
         self.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "TeamTableViewCell")
     }
     
-    func setData() {
+    func setData(teamArray:[MyteamUserList]) {
         self.delegate = self
         self.dataSource = self
+        self.teamArray = teamArray
         self.reloadData()
     }
 }
 
 extension CustomTableView: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.teamArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,6 +53,7 @@ extension CustomTableView: UITableViewDelegate,UITableViewDataSource {
         case .team:
             guard let cell = self.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath) as? TeamTableViewCell else {return UITableViewCell()}
             cell.memberImageView.roundCorners()
+            cell.setData(memberObj: self.teamArray[indexPath.row])
             return cell
         case .none:
             return UITableViewCell()

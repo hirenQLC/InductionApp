@@ -11,11 +11,14 @@ import UIKit
 enum ApiRequest {
     
     case login(Email:String ,Password:String)
+    case attendence(SortType: Int)
     
     var httpMethod: HttpMethods {
         switch self {
         case .login:
             return HttpMethods.POST
+        case .attendence:
+            return HttpMethods.GET
         }
     }
     
@@ -23,6 +26,8 @@ enum ApiRequest {
         switch self {
         case .login:
             return "/authenticate/loginV2"
+        case .attendence(let sortType):
+            return "/mobileshift/getMyTeamForAttendance/\(UserDatabaseManager.shared.fetchUser()?.userId ?? 0)/\(sortType)"
         }
     }
     
@@ -31,6 +36,9 @@ enum ApiRequest {
             
         case .login:
             return ContentTypes.json
+            
+        case .attendence:
+            return ContentTypes.urlEncoded
         
         default:
             
@@ -43,6 +51,8 @@ enum ApiRequest {
         switch self {
         case .login:
             return []
+        case .attendence:
+            return [Headers.userToken(token: UserDatabaseManager.shared.fetchUser()?.userToken ?? "")]
         }
     }
     
@@ -50,13 +60,14 @@ enum ApiRequest {
         switch self {
         case .login(let Email,let Password):
             return [ApiParam.text(key: "userEmailAddress", value: Email),ApiParam.text(key: "password", value: Password),ApiParam.text(key: "key", value: ""),ApiParam.text(key: "appVersion", value: "58"),ApiParam.text(key: "deviceOS", value: "2")]
+        case .attendence:
+            return []
         }
     }
     
     func parseResponseData(data: Data, httpResponse: HTTPURLResponse, apiCallbacks: ApiCallbacks ){
         switch self {
-        case .login:
-            
+        case .login,.attendence:
             apiCallbacks.onHttpResponse(request: self, data: data)
         }
     }
@@ -79,7 +90,7 @@ enum ApiRequest {
         case accept(contentType: ContentTypes)
         case tokenType(token: String)
         case contentType(contentType: ContentTypes)
-        case accessToken(token: String)
+        case userToken(token: String)
         case client(client: String)
         case expiry(expiry: String)
         case uid(uid: String)
@@ -92,8 +103,8 @@ enum ApiRequest {
                 return "Authorization"
             case .contentType:
                 return "Content-Type"
-            case .accessToken:
-                return "access-token"
+            case .userToken:
+                return "userToken"
             case .client:
                 return "client"
             case .expiry:
@@ -109,7 +120,7 @@ enum ApiRequest {
                 return contentType.rawValue
             case .tokenType(let token):
                 return token
-            case .accessToken(let accessToken):
+            case .userToken(let accessToken):
                 return accessToken
             case .client(let client):
                 return client

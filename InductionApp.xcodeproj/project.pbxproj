@@ -22,7 +22,7 @@
 		791CAE2124C85FB80044663B /* IndustryCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0A24C85FB60044663B /* IndustryCategoryList.swift */; };
 		791CAE2224C85FB80044663B /* ExpenseCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0B24C85FB60044663B /* ExpenseCategoryList.swift */; };
 		791CAE2324C85FB80044663B /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0C24C85FB60044663B /* Holiday.swift */; };
-		791CAE2424C85FB80044663B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0D24C85FB60044663B /* Result.swift */; };
+		791CAE2424C85FB80044663B /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0D24C85FB60044663B /* LoginResult.swift */; };
 		791CAE2524C85FB80044663B /* ModifiedOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0E24C85FB70044663B /* ModifiedOn.swift */; };
 		791CAE2624C85FB80044663B /* StopTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE0F24C85FB70044663B /* StopTimeout.swift */; };
 		791CAE2724C85FB80044663B /* CreatedOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CAE1024C85FB70044663B /* CreatedOn.swift */; };
@@ -39,8 +39,12 @@
 		791EDF3C24C5CBC100C0D7BD /* DashboardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EDF3B24C5CBC100C0D7BD /* DashboardCollectionView.swift */; };
 		791EDF4124C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EDF3F24C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.swift */; };
 		791EDF4224C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791EDF4024C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.xib */; };
-		797295D224C7069500C5B56B /* LNZSnapToCenterCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797295D124C7069500C5B56B /* LNZSnapToCenterCollectionViewLayout.swift */; };
-		797295D424C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797295D324C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift */; };
+		79688CEC24CED8120038D764 /* ZoomAndSnapFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79688CEB24CED8120038D764 /* ZoomAndSnapFlowLayout.swift */; };
+		79688CEE24D148F70038D764 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79688CED24D148F70038D764 /* CircularProgressView.swift */; };
+		79688CF324D3F3E50038D764 /* AttendenceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79688CF024D3F3E40038D764 /* AttendenceBase.swift */; };
+		79688CF424D3F3E50038D764 /* AttendenceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79688CF124D3F3E50038D764 /* AttendenceResult.swift */; };
+		79688CF524D3F3E50038D764 /* MyteamUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79688CF224D3F3E50038D764 /* MyteamUserList.swift */; };
+		79688CF824D3F5960038D764 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79688CF724D3F5960038D764 /* APIResponse.swift */; };
 		797295DC24C8179800C5B56B /* ApiCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797295D624C8179700C5B56B /* ApiCallbacks.swift */; };
 		797295DD24C8179800C5B56B /* ApiParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797295D724C8179700C5B56B /* ApiParam.swift */; };
 		797295DE24C8179800C5B56B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797295D824C8179700C5B56B /* Reachability.swift */; };
@@ -111,7 +115,7 @@
 		791CAE0A24C85FB60044663B /* IndustryCategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndustryCategoryList.swift; sourceTree = "<group>"; };
 		791CAE0B24C85FB60044663B /* ExpenseCategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryList.swift; sourceTree = "<group>"; };
 		791CAE0C24C85FB60044663B /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
-		791CAE0D24C85FB60044663B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		791CAE0D24C85FB60044663B /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		791CAE0E24C85FB70044663B /* ModifiedOn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifiedOn.swift; sourceTree = "<group>"; };
 		791CAE0F24C85FB70044663B /* StopTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTimeout.swift; sourceTree = "<group>"; };
 		791CAE1024C85FB70044663B /* CreatedOn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedOn.swift; sourceTree = "<group>"; };
@@ -128,8 +132,12 @@
 		791EDF3B24C5CBC100C0D7BD /* DashboardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionView.swift; sourceTree = "<group>"; };
 		791EDF3F24C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAttendenceCollectionViewCell.swift; sourceTree = "<group>"; };
 		791EDF4024C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardAttendenceCollectionViewCell.xib; sourceTree = "<group>"; };
-		797295D124C7069500C5B56B /* LNZSnapToCenterCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNZSnapToCenterCollectionViewLayout.swift; sourceTree = "<group>"; };
-		797295D324C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNZInfiniteCollectionViewLayout.swift; sourceTree = "<group>"; };
+		79688CEB24CED8120038D764 /* ZoomAndSnapFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndSnapFlowLayout.swift; sourceTree = "<group>"; };
+		79688CED24D148F70038D764 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		79688CF024D3F3E40038D764 /* AttendenceBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendenceBase.swift; sourceTree = "<group>"; };
+		79688CF124D3F3E50038D764 /* AttendenceResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendenceResult.swift; sourceTree = "<group>"; };
+		79688CF224D3F3E50038D764 /* MyteamUserList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyteamUserList.swift; sourceTree = "<group>"; };
+		79688CF724D3F5960038D764 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		797295D624C8179700C5B56B /* ApiCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCallbacks.swift; sourceTree = "<group>"; };
 		797295D724C8179700C5B56B /* ApiParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiParam.swift; sourceTree = "<group>"; };
 		797295D824C8179700C5B56B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -239,7 +247,7 @@
 				791CAE0424C85FB50044663B /* Newsletter_agreed_on.swift */,
 				791CAE1524C85FB70044663B /* PermissionsList.swift */,
 				791CAE1124C85FB70044663B /* PurposeCategoryList.swift */,
-				791CAE0D24C85FB60044663B /* Result.swift */,
+				791CAE0D24C85FB60044663B /* LoginResult.swift */,
 				791CAE1624C85FB80044663B /* Role_list.swift */,
 				791CAE0924C85FB60044663B /* ShiftDetails.swift */,
 				791CAE0024C85FB40044663B /* ShiftWeekOffList.swift */,
@@ -278,11 +286,29 @@
 			path = "Team TableViewCell";
 			sourceTree = "<group>";
 		};
+		79688CEF24D3F38A0038D764 /* Attendence */ = {
+			isa = PBXGroup;
+			children = (
+				79688CF024D3F3E40038D764 /* AttendenceBase.swift */,
+				79688CF224D3F3E50038D764 /* MyteamUserList.swift */,
+				79688CF124D3F3E50038D764 /* AttendenceResult.swift */,
+			);
+			path = Attendence;
+			sourceTree = "<group>";
+		};
+		79688CF624D3F4B20038D764 /* Base Model */ = {
+			isa = PBXGroup;
+			children = (
+				79688CF724D3F5960038D764 /* APIResponse.swift */,
+			);
+			path = "Base Model";
+			sourceTree = "<group>";
+		};
 		797295D024C7063B00C5B56B /* Third Party Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				797295D124C7069500C5B56B /* LNZSnapToCenterCollectionViewLayout.swift */,
-				797295D324C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift */,
+				79688CEB24CED8120038D764 /* ZoomAndSnapFlowLayout.swift */,
+				79688CED24D148F70038D764 /* CircularProgressView.swift */,
 			);
 			path = "Third Party Libraries";
 			sourceTree = "<group>";
@@ -375,6 +401,8 @@
 		79D9393C24C018600077174B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				79688CF624D3F4B20038D764 /* Base Model */,
+				79688CEF24D3F38A0038D764 /* Attendence */,
 				791CADFF24C85F310044663B /* Login */,
 			);
 			path = Models;
@@ -750,12 +778,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79688CEE24D148F70038D764 /* CircularProgressView.swift in Sources */,
 				791CAE1824C85FB80044663B /* AttendanceTiemout.swift in Sources */,
 				79D9394724C01ED10077174B /* Style+Font.swift in Sources */,
 				791CAE1C24C85FB80044663B /* AttendanceData.swift in Sources */,
 				79D9394C24C0216E0077174B /* RootNavigationController.swift in Sources */,
 				791CAE2B24C85FB80044663B /* StartTimeout.swift in Sources */,
 				791CAE1D24C85FB80044663B /* AssignedTerritoryList.swift in Sources */,
+				79688CF524D3F3E50038D764 /* MyteamUserList.swift in Sources */,
 				791CAE2A24C85FB80044663B /* LoginBase.swift in Sources */,
 				797295DD24C8179800C5B56B /* ApiParam.swift in Sources */,
 				791EDF4124C5CEB600C0D7BD /* DashboardAttendenceCollectionViewCell.swift in Sources */,
@@ -770,6 +800,7 @@
 				79F27A4124C1894A0082E45C /* CustomButton.swift in Sources */,
 				79D9394924C020D40077174B /* RootViewController.swift in Sources */,
 				791CAE2D24C85FB80044663B /* Role_list.swift in Sources */,
+				79688CF424D3F3E50038D764 /* AttendenceResult.swift in Sources */,
 				791EDF3424C5965B00C0D7BD /* CustomTableView.swift in Sources */,
 				791CAE2124C85FB80044663B /* IndustryCategoryList.swift in Sources */,
 				79D9395624C02DF80077174B /* UIViewContoller+Extension.swift in Sources */,
@@ -780,10 +811,10 @@
 				79D9396024C073620077174B /* DashboardViewController.swift in Sources */,
 				791CAE2624C85FB80044663B /* StopTimeout.swift in Sources */,
 				791CAE1724C85FB80044663B /* ShiftWeekOffList.swift in Sources */,
+				79688CEC24CED8120038D764 /* ZoomAndSnapFlowLayout.swift in Sources */,
 				791CAE2524C85FB80044663B /* ModifiedOn.swift in Sources */,
 				791CAE2724C85FB80044663B /* CreatedOn.swift in Sources */,
 				797295E024C8179800C5B56B /* HttpManager.swift in Sources */,
-				797295D224C7069500C5B56B /* LNZSnapToCenterCollectionViewLayout.swift in Sources */,
 				79D9395024C027AC0077174B /* BaseViewController.swift in Sources */,
 				797295DF24C8179800C5B56B /* ApiConfig.swift in Sources */,
 				797295DC24C8179800C5B56B /* ApiCallbacks.swift in Sources */,
@@ -792,17 +823,18 @@
 				791CAE2924C85FB80044663B /* TerritoryLastUpdated.swift in Sources */,
 				791CAE2C24C85FB80044663B /* PermissionsList.swift in Sources */,
 				79E097F324CC34920036ECEC /* UserDatabaseManager.swift in Sources */,
-				797295D424C70FA100C5B56B /* LNZInfiniteCollectionViewLayout.swift in Sources */,
 				79D938FB24C016A80077174B /* SceneDelegate.swift in Sources */,
 				791CAE2224C85FB80044663B /* ExpenseCategoryList.swift in Sources */,
 				791EDF3C24C5CBC100C0D7BD /* DashboardCollectionView.swift in Sources */,
 				791CAE2024C85FB80044663B /* ShiftDetails.swift in Sources */,
+				79688CF324D3F3E50038D764 /* AttendenceBase.swift in Sources */,
 				79D9390324C016A80077174B /* InductionApp.xcdatamodeld in Sources */,
 				791EDF3A24C5A73700C0D7BD /* UIImage+Extension.swift in Sources */,
 				791CAE1E24C85FB80044663B /* Terms_condition_agreed_on.swift in Sources */,
 				791EDF3724C599AC00C0D7BD /* TeamTableViewCell.swift in Sources */,
-				791CAE2424C85FB80044663B /* Result.swift in Sources */,
+				791CAE2424C85FB80044663B /* LoginResult.swift in Sources */,
 				79F27A4324C1ABA50082E45C /* CustomTextField.swift in Sources */,
+				79688CF824D3F5960038D764 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

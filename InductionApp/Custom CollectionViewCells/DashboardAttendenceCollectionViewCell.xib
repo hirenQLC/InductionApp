@@ -18,7 +18,38 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8JP-wB-9j2">
                         <rect key="frame" x="0.0" y="0.0" width="234" height="87"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendence (Team)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-W4-FAl">
+                                <rect key="frame" x="0.0" y="0.0" width="234" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-TV-uvn" customClass="CircularProgressView" customModule="InductionApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="32.5" width="42.5" height="42.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zLP-TV-uvn" secondAttribute="height" multiplier="1:1" id="xjO-2h-FwZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMV-f2-GLF">
+                                <rect key="frame" x="16" y="46" width="26.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tUJ-W4-FAl" secondAttribute="trailing" id="Ecy-c1-J2s"/>
+                            <constraint firstItem="zLP-TV-uvn" firstAttribute="leading" secondItem="8JP-wB-9j2" secondAttribute="leading" constant="8" id="Kqy-Er-WGI"/>
+                            <constraint firstItem="xMV-f2-GLF" firstAttribute="centerX" secondItem="zLP-TV-uvn" secondAttribute="centerX" id="UgB-ue-kDq"/>
+                            <constraint firstItem="xMV-f2-GLF" firstAttribute="centerY" secondItem="zLP-TV-uvn" secondAttribute="centerY" id="aXf-cy-Zow"/>
+                            <constraint firstItem="tUJ-W4-FAl" firstAttribute="top" secondItem="8JP-wB-9j2" secondAttribute="top" id="bWe-Xo-VCh"/>
+                            <constraint firstItem="tUJ-W4-FAl" firstAttribute="leading" secondItem="8JP-wB-9j2" secondAttribute="leading" id="h2y-6v-G3j"/>
+                            <constraint firstAttribute="bottom" secondItem="zLP-TV-uvn" secondAttribute="bottom" constant="12" id="sxE-Qy-p5g"/>
+                            <constraint firstItem="zLP-TV-uvn" firstAttribute="top" secondItem="tUJ-W4-FAl" secondAttribute="bottom" constant="12" id="vML-VD-tjx"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -30,7 +61,12 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="234" height="87"/>
-            <point key="canvasLocation" x="244.92753623188409" y="138.28125"/>
+            <connections>
+                <outlet property="attendencePercentageLabel" destination="xMV-f2-GLF" id="XmF-So-bzn"/>
+                <outlet property="progressView" destination="zLP-TV-uvn" id="0t1-xn-hRy"/>
+                <outlet property="viewTitleLabel" destination="tUJ-W4-FAl" id="Qlh-cY-NLk"/>
+            </connections>
+            <point key="canvasLocation" x="263.768115942029" y="161.71875"/>
         </collectionViewCell>
     </objects>
 </document>

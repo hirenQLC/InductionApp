@@ -13,6 +13,8 @@ enum Color {
     case backgroundWhite
     case navigationBarBlue
     case buttonLightBlue
+    case progressTrackGray
+    case progressGreen
 }
 
 extension Color {
@@ -25,6 +27,10 @@ extension Color {
             uiInstance = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         case .buttonLightBlue:
             uiInstance = UIColor(red: 50/255, green: 131/255, blue: 164/255, alpha: 1.0)
+        case .progressTrackGray:
+            uiInstance = UIColor.lightGray
+        case .progressGreen:
+            uiInstance = UIColor.green
         }
         return uiInstance
     }
